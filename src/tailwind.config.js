@@ -11,18 +11,14 @@ export default {
                     body: "#2f3239",
                     dark: "#383c45",
                 },
-                primary: "#1ab1dd",
-                secondary: "#f1cd52",
-                accent: {
-                    1: "#1fcfb7",
-                    2: "#11f09b",
-                },
-                text: {
-                    light: "#ffffff",
-                    dark: "#000000",
-                }
-            }
+                primary: "#1ab1dd", // Bleu clair
+                secondary: "#f1cd52", // Jaune doré
+                accent1: "#1fcfb7", // Turquoise
+                accent2: "#11f09b", // Vert clair
+                textlight: "#ffffff",
+                textdark: "#000000",
+            },
         },
-    },
+    },      
     plugins: [],
 }
