@@ -14,14 +14,6 @@ const Header: React.FC = () => {
                 <p className="text-sm text-gray-500">Je crée des sites qui racontent votre histoire</p>
                 </div>
             </div>
-            <a
-                href="https://gb-webassist.fr/"
-                className="text-sm text-blue-600 hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Voir mon site
-            </a>
         </header>
     )
 }
