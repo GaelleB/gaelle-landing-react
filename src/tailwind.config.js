@@ -7,16 +7,14 @@ export default {
     theme: {
         extend: {
             colors: {
-                background: {
-                    body: "#2f3239",
-                    dark: "#383c45",
-                },
-                primary: "#1ab1dd", // Bleu clair
-                secondary: "#f1cd52", // Jaune doré
-                accent1: "#1fcfb7", // Turquoise
-                accent2: "#11f09b", // Vert clair
-                textlight: "#ffffff",
-                textdark: "#000000",
+                backgroundBody: '#2f3239',
+                backgroundDark: '#383c45',
+                primary: '#1ab1dd',
+                secondary: '#f1cd52',
+                accent1: '#1fcfb7',
+                accent2: '#11f09b',
+                textLight: '#ffffff',
+                textDark: '#000000',
             },
         },
     },      
