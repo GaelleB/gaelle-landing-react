@@ -2,54 +2,53 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
-type Link = {
-  label: string;
-  href: string;
-  style: string;
-};
-
-const links: Link[] = [
+const links = [
   {
     label: "Découvrir l'offre Coup de Pouce Web",
-    href: "#",
-    style: "bg-primary text-white shadow-lg hover:bg-accent1",
+    href: "https://gb-webassist.fr/",
+    style:
+    "border border-gray-300 bg-white text-textdark font-semibold hover:bg-gray-100 shadow-md",
   },
   {
     label: "Prendre rendez-vous avec moi",
-    href: "https://calendly.com/gaelleboucher-dev/30min",
-    style: "border border-primary text-primary hover:bg-primary hover:text-white",
+    href: "https://gb-webassist.fr/#contact",
+    style:
+      "border border-gray-300 bg-white text-textdark font-semibold hover:bg-gray-100 shadow-md",
   },
   {
     label: "Mon site GB WebAssist",
-    href: "https://gb-webassist.fr/",
-    style: "border border-gray-400 text-gray-700 hover:bg-gray-100",
+    href: "https://gb-webassist.fr",
+    style:
+      "border border-gray-300 bg-white text-textdark font-semibold hover:bg-gray-100 shadow-md",
   },
 ];
 
 const LinksPage: React.FC = () => {
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-between bg-gradient-to-br from-background-body to-background-dark text-white">
+    <div className="min-h-screen w-full bg-gradient-to-br from-background-body to-background-dark text-textlight flex flex-col items-center justify-between">
       <Header />
 
-      <main className="flex flex-col items-center justify-center flex-1 w-full px-4 py-8">
-        <section className="bg-white text-black rounded-xl shadow-xl w-full max-w-md p-6 flex flex-col items-center">
+      <main className="flex flex-col items-center justify-center flex-1 px-4 w-full">
+        <section className="flex flex-col items-center justify-center w-full max-w-md px-4 py-10">
           <img
-            src="/assets/photo-gaelle.jpg"
+            src="/src/assets/photo-gaelle.jpg"
             alt="Photo de Gaëlle"
-            className="w-28 h-28 rounded-full object-cover shadow-lg mb-4"
+            className="w-28 h-28 rounded-full object-cover shadow-lg mb-4 border-4 border-secondary transition-transform duration-300 hover:scale-105"
           />
 
-          <h1 className="text-3xl font-bold mb-1">Gaëlle</h1>
-          <p className="text-gray-700 text-sm mb-6 flex items-center gap-1">
-            Je crée des sites qui racontent votre histoire 📖
+          <h1 className="text-3xl font-bold mb-1 text-textlight">Gaëlle</h1>
+
+          <p className="text-gray-300 text-sm mb-6 flex items-center gap-2 text-center tracking-wide">
+            Je crée des sites qui racontent votre histoire
+            <span>📖</span>
           </p>
 
-          <div className="w-full flex flex-col gap-3">
+          <div className="w-full flex flex-col gap-4">
             {links.map((link, index) => (
               <a
                 key={index}
                 href={link.href}
-                className={`text-center py-3 px-4 rounded-xl font-medium transition-all duration-200 ease-in-out ${link.style}`}
+                className={`text-center py-3 px-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 ${link.style}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
