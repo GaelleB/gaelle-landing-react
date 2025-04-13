@@ -19,12 +19,7 @@ const links = [
 
 const LinksPage: React.FC = () => {
   return (
-    <div
-      className="min-h-screen w-full text-text-light flex flex-col items-center justify-between"
-      style={{
-        background: "linear-gradient(to bottom right, #2f3239, #383c45)",
-      }}
-    >
+    <div className="min-h-screen w-full bg-gradient-to-br from-background-dark via-background-body to-primary text-textlight flex flex-col items-center justify-between">
       <Header />
 
       <main className="flex flex-col items-center justify-center flex-1 px-4 w-full">
