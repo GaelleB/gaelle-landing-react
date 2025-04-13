@@ -10,7 +10,7 @@ const links = [
   },
   {
     label: "Prendre rendez-vous avec moi",
-    href: "https://gb-webassist.fr/#contact",
+    href: "https://calendly.com/gaelleboucher-dev/30min",
     delay: 1400,
   },
   {
