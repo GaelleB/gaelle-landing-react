@@ -6,17 +6,17 @@ const links = [
   {
     label: "Découvrir l'offre Coup de Pouce Web",
     href: "https://gb-webassist.fr/",
-    delay: "delay-[100ms]",
+    delay: "delay-[400ms]",
   },
   {
     label: "Prendre rendez-vous avec moi",
     href: "https://calendly.com/gaelleboucher-dev/30min",
-    delay: "delay-[300ms]",
+    delay: "delay-[800ms]",
   },
   {
     label: "Mon site GB WebAssist",
     href: "https://gb-webassist.fr",
-    delay: "delay-[500ms]",
+    delay: "delay-[1200ms]",
   },
 ];
 
