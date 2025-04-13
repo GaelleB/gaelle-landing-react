@@ -9,10 +9,7 @@ const Header: React.FC = () => {
                 className="h-25 w-auto transition-transform duration-300 ease-in-out hover:scale-110"
             />
             <div className="text-center sm:text-left">
-                <h1 className="text-2xl font-semibold text-accent1 transition-transform duration-300 ease-in-out hover:scale-110">
-                GB WebAssist
-                </h1>
-                <p className="text-sm text-textlight transition-transform duration-300 ease-in-out hover:scale-110">Des sites qui racontent votre histoire</p>
+                <p className="text-xl text-textlight opacity-80 mt-1">Des sites qui racontent votre histoire</p>
             </div>
         </header>
     );
