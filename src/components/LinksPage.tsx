@@ -1,28 +1,30 @@
-import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import React from "react"
+import Header from "./Header"
+import Footer from "./Footer"
 
 const links = [
   {
     label: "Découvrir l'offre Coup de Pouce Web",
     href: "https://gb-webassist.fr/",
-    style: "bg-white border border-[#f1cd52] text-black hover:bg-[#f1cd52] hover:text-white",
   },
   {
     label: "Prendre rendez-vous avec moi",
     href: "https://gb-webassist.fr/#contact",
-    style: "bg-white border border-[#f1cd52] text-black hover:bg-[#f1cd52] hover:text-white",
   },
   {
     label: "Mon site GB WebAssist",
     href: "https://gb-webassist.fr",
-    style: "bg-white border border-[#f1cd52] text-black hover:bg-[#f1cd52] hover:text-white",
   },
-];
+]
 
 const LinksPage: React.FC = () => {
   return (
-    <div className="min-h-screen w-full bg-background-body text-textlight flex flex-col items-center justify-between">
+    <div
+      className="min-h-screen w-full text-text-light flex flex-col items-center justify-between"
+      style={{
+        background: "linear-gradient(to bottom right, #2f3239, #383c45)",
+      }}
+    >
       <Header />
 
       <main className="flex flex-col items-center justify-center flex-1 px-4 w-full">
@@ -30,13 +32,12 @@ const LinksPage: React.FC = () => {
           <img
             src="/assets/photo-gaelle.jpg"
             alt="Photo de Gaëlle"
-            className="w-28 h-28 rounded-full object-cover shadow-lg mb-4 border-4 border-secondary"
+            className="w-28 h-28 rounded-full object-cover shadow-xl mb-4 border-4 border-secondary"
           />
 
           <h1 className="text-3xl font-bold mb-1">Gaëlle</h1>
-          <p className="text-sm mb-6 flex items-center gap-2 text-center">
-            Je crée des sites qui racontent votre histoire
-            <span>📖</span>
+          <p className="text-gray-300 text-sm mb-6 text-center">
+            Je crée des sites qui racontent votre histoire 📖
           </p>
 
           <div className="w-full flex flex-col gap-4">
@@ -44,10 +45,11 @@ const LinksPage: React.FC = () => {
               <a
                 key={index}
                 href={link.href}
-                className={`text-center py-3 px-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 ${link.style}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+                className="px-6 py-3 text-center font-semibold rounded-xl bg-white text-textdark 
+                          border border-secondary shadow-md transition-all duration-300 
+                            hover:bg-secondary hover:text-textdark hover:shadow-xl hover:scale-105 
+                          active:scale-100"
+            >
                 {link.label}
               </a>
             ))}
@@ -57,7 +59,7 @@ const LinksPage: React.FC = () => {
 
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default LinksPage;
+export default LinksPage
