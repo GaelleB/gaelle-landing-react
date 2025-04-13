@@ -34,12 +34,6 @@ const LinksPage: React.FC = () => {
             alt="Photo de Gaëlle"
             className="w-28 h-28 rounded-full object-cover shadow-xl mb-4 border-4 border-secondary"
           />
-
-          <h1 className="text-3xl font-bold mb-1">Gaëlle</h1>
-          <p className="text-gray-300 text-sm mb-6 text-center">
-            Je crée des sites qui racontent votre histoire 📖
-          </p>
-
           <div className="w-full flex flex-col gap-4">
             {links.map((link, index) => (
               <a
