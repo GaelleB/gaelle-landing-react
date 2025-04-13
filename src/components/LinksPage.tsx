@@ -1,21 +1,24 @@
-import React from "react"
-import Header from "./Header"
-import Footer from "./Footer"
+import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const links = [
   {
     label: "Découvrir l'offre Coup de Pouce Web",
     href: "https://gb-webassist.fr/",
+    delay: "delay-[100ms]",
   },
   {
     label: "Prendre rendez-vous avec moi",
-    href: "https://gb-webassist.fr/#contact",
+    href: "https://calendly.com/gaelleboucher-dev/30min",
+    delay: "delay-[300ms]",
   },
   {
     label: "Mon site GB WebAssist",
     href: "https://gb-webassist.fr",
+    delay: "delay-[500ms]",
   },
-]
+];
 
 const LinksPage: React.FC = () => {
   return (
@@ -34,11 +37,13 @@ const LinksPage: React.FC = () => {
               <a
                 key={index}
                 href={link.href}
-                className="px-6 py-3 text-center font-semibold rounded-xl bg-white text-textdark 
-                          border border-secondary shadow-md transition-all duration-300 
-                            hover:bg-secondary hover:text-textdark hover:shadow-xl hover:scale-105 
-                          active:scale-100"
-            >
+                className={`px-6 py-3 text-center font-semibold rounded-xl bg-white text-textdark 
+                  border border-secondary shadow-md transition-all duration-300 transform
+                  hover:bg-secondary hover:text-textdark hover:shadow-xl hover:scale-105 active:scale-100
+                  opacity-0 translate-y-4 animate-fade-in-up ${link.delay}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {link.label}
               </a>
             ))}
@@ -48,7 +53,7 @@ const LinksPage: React.FC = () => {
 
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default LinksPage
+export default LinksPage;

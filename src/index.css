@@ -9,4 +9,19 @@
     --color-accent2: #11f09b;
     --color-textlight: #ffffff;
     --color-textdark: #000000;
+}
+
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out forwards;
 }  
