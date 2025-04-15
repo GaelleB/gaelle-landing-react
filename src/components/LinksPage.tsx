@@ -5,7 +5,7 @@ import Footer from "./Footer";
 const links = [
   {
     label: "Découvrir l'offre Coup de Pouce Web",
-    href: "https://gb-webassist.fr/",
+    href: "https://offre-coup-de-pouce-web.vercel.app/",
     delay: 700,
   },
   {
